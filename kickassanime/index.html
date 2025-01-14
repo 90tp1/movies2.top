@@ -6,23 +6,24 @@
   <meta name="robots" content="nofollow, noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="https://anix-to.site/wp-content/uploads/2024/09/cropped-favicon-192x192.png" />
-  <style>
+ <style>
   body {
     margin: 0;
-    background: #000;
+    background: #191919;
   }
 a#logo {
   position: fixed;
   z-index: 1;
-  background: #1B1B1B;
-  padding: 0 23px 0 0;
-  left: 160px;
+  background: #191919;
+  padding: 9px 112px 3px 5px;
+  margin-left: calc(50% - 620px);
 }
-  .pc {
-    width: 200px;
-  }
+.pc {
+  width: 120px;
+}
   iframe#main-iframe {
-    width: calc(100vw - 320px);
+/*    width: calc(100vw - 320px);*/
+  width: 100%;
     height: 100vh;
     display:block;
     margin: auto;
@@ -56,6 +57,26 @@ a#logo {
       min-width: 400px;
     }
   }*/
+  @media only screen and (max-width: 1560px) {
+  a#logo {
+    left: 130px;
+  }
+  iframe#main-iframe {
+    width: calc(100vw - 320px);
+  }
+  }
+ @media screen and (max-width: 1280px) {
+  a#logo {
+    margin-left: calc(50% - 416px);
+    padding-right: 95px;
+  }
+  a#logo {
+  left: 30px;
+}
+.pc {
+  width: 133px;
+}
+}
 
   @media only screen and (max-width: 1000px) {
   a#logo {
@@ -68,7 +89,7 @@ a#logo {
       display: none;
     }
   }
-  @media only screen and (max-width: 728px) {
+  @media only screen and (max-width: 828px) {
 
     .banner-ngang {
       display: none;
@@ -80,11 +101,10 @@ a#logo {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  left: 50%;
-  margin-left: -100px;
-  padding-right: 0;
+  left: 7px;
+  margin-left: 0;
+  padding-right: 80px;
   padding-left: 0;
-  display: none;
 }
   }
 
